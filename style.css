@@ -1,0 +1,332 @@
+/* Theme Name: Kidzoo CDC Inc
+* Theme URI: http://kidzooinc.com
+* Description: Kidzoo CDC INC Theme. Copyright 2017 all rights reserved.
+* Version: 1.0.0
+* Author: Kidzoo CDC INC
+* Author URI:
+* Tags:
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #38aa48;
+}
+
+ul li{
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 18pt;
+    margin-bottom: 10px;
+}
+
+p{
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 18pt;
+}
+b{
+    font-size: 12pt;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    margin: 5px 0 10px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav{
+    height: 105px;
+    padding: 2%;
+    background-color: #fff;
+    color: #38aa48;
+    border-bottom: 10px solid #38aa48;
+}
+
+#nav img{
+    margin-top: -15px;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+#nav ul{
+    display: block;
+    float: right
+}
+#nav ul li{
+    display: inline-block;
+    float: left;
+    padding: 4px 20px 0px 20px;
+    font-size: 14pt;
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 0;
+}
+#nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#nav ul li a:hover{
+    color: green;
+}
+#mobile-menu-nav{
+    background-color: #eef2bf;
+    text-align: center;
+    border-bottom: 10px solid #38aa48;
+    display: block;
+}
+
+#mobile-menu-nav.ng-hide{
+    display: none;
+}
+
+#mobile-menu-nav ul{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#mobile-menu-nav ul li{
+    display: inline-block;
+    padding: 12px;
+    font-size: 14pt;
+    font-family: 'Roboto Slab', serif;
+}
+
+#mobile-menu-nav ul li a{
+    color: #38aa48;
+    text-decoration: none;
+   
+
+}
+
+#mobile-menu{
+    float: right;
+    padding: 10px 20px 0px 0px;
+    font-size: 20pt;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+@media screen and (min-width: 600px){
+    #nav ul{
+        display: block;
+    }
+    
+    #mobile-menu{
+        display: none;
+    }
+    #mobile-clicked{
+        display: none;
+    }
+    #mobile-menu-nav{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 599px){
+    #nav ul{
+        display: none;
+    }
+    
+    #mobile-menu{
+        display: block;
+    }
+}
+
+.home #hero img{
+    width: 100%;
+}
+
+.home .class-nav-line{
+    background-color: #38aa48;
+    height: 3px;
+    margin-top: 15px;
+}
+
+@media all and (min-width: 768px){
+    .home .class-nav-line{
+        margin-top: 5px;
+    }
+}
+
+.home .class-nav {
+  text-align: center;
+  padding: 5px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.home .class-nav p{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.home .class-nav p:hover{
+    color: green;
+}
+
+@media all and (min-width: 768px){
+    .home .class-nav p{
+        margin: 0;
+    }
+}
+
+.home .class-info{
+    padding: 10px 20px;
+}
+
+#class-sidebar{
+    color: #fff;
+    background-color: #38aa48;
+    padding: 20px;
+    border: 5px solid #fff;
+}
+
+#class-sidebar ul{
+    padding:  0 0 0 20px;
+}
+
+#class-sidebar h3{
+    margin-top: 0;
+}
+
+.contact .glyphicon{
+    margin: 0 10px 0 0;
+}
+
+.contact .contact-sidebar{
+    color: #fff;
+    background-color: #38aa48;
+    padding: 25px 15px;
+    border: 5px solid #fff;
+    text-align: center;
+}
+
+.contact .contact-sidebar h3{
+    margin-top: 0;
+}
+
+
+#contact{
+    background-color: #fff;
+    color: #000;
+}
+#contact-info {
+    margin: 0 auto;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    background: url(pics/turtle.png) bottom right no-repeat;
+    background-size: 20%;
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 50%;
+    display: inline-block;
+    background-color: #38aa48;
+}
+
+form{
+    width: 100%;
+    padding: 4%;
+    text-align: center;
+    border-left: 3px solid #38aa48;
+    margin-bottom: 15px;
+}
+
+form input{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #38aa48;
+    border-radius: 5px;
+}
+
+form textarea{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #38aa48;
+}
+
+form button, .wpcf7-submit{
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #38aa48;
+    color: #fff;
+}
+
+@media all and (min-width: 768px){
+    form{
+        padding: 0 0 0 20px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 825px){
+    form{
+        border: none;
+    }
+    #contact-info{
+        width: 100%;
+    }
+    #contact-form{
+        width: 100%;
+    }
+}
+
+#footer{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    border-top: 10px solid #38aa48;
+    padding-top: 10px;
+}
+
+#footer a{
+    font-weight: bold;
+}
+
+.footer-section{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 789px){
+    .footer-section{
+        width: 100%;
+        display: block;
+    }
+}
+
+.container{
+    padding: 4%;
+}
