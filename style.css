@@ -224,12 +224,11 @@ a:hover{
 .contact .contact-sidebar h3{
     margin-top: 0;
 }
-
-
-#contact{
+#contact {
     background-color: #fff;
     color: #000;
 }
+
 #contact-info {
     margin: 0 auto;
     width: 50%;
@@ -246,7 +245,7 @@ a:hover{
     background-color: #38aa48;
 }
 
-form{
+form {
     width: 100%;
     padding: 4%;
     text-align: center;
@@ -254,7 +253,7 @@ form{
     margin-bottom: 15px;
 }
 
-form input{
+form input {
     width: 100%;
     margin: 10px auto;
     padding: 10px;
@@ -262,7 +261,7 @@ form input{
     border-radius: 5px;
 }
 
-form textarea{
+form textarea {
     width: 100%;
     margin: 10px auto;
     padding: 10px;
@@ -270,7 +269,7 @@ form textarea{
     border: 2px solid #38aa48;
 }
 
-form button, .wpcf7-submit{
+form button, .wpcf7-submit {
     width: 50%;
     margin: 10px auto;
     padding: 10px;
@@ -281,7 +280,7 @@ form button, .wpcf7-submit{
 }
 
 @media all and (min-width: 768px){
-    form{
+    form {
         padding: 0 0 0 20px;
         width: 90%;
     }
@@ -289,18 +288,18 @@ form button, .wpcf7-submit{
 
 
 @media screen and (max-width: 825px){
-    form{
+    form {
         border: none;
     }
-    #contact-info{
+    #contact-info {
         width: 100%;
     }
-    #contact-form{
+    #contact-form {
         width: 100%;
     }
 }
 
-#footer{
+#footer {
     background-color: #fff;
     position: absolute;
     width: 100%;
@@ -308,15 +307,48 @@ form button, .wpcf7-submit{
     padding-top: 10px;
 }
 
-#footer a{
-    font-weight: bold;
+#footer .container {
+	padding: 0 15px;
 }
 
-.footer-section{
+#footer p {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 5px;
+}
+
+#footer a {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-section {
     width: 33%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
+}
+
+
+
+.footer-section .social ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 5px;
+}
+
+.footer-section .social ul li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.footer-section .social ul li:first-of-type {
+	margin: 0 5px 0 0;
+}
+
+#footer .footer-section .social ul li a{
+	font-weight: 400;
+	font-size: 18px;
 }
 
 
@@ -325,6 +357,16 @@ form button, .wpcf7-submit{
         width: 100%;
         display: block;
     }
+}
+
+@media all and (min-width: 789px) {
+	.footer-section:first-of-type {
+		text-align: left;
+	}
+	
+	.footer-section:last-of-type {
+		text-align: right;
+	}
 }
 
 .container{

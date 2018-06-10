@@ -37,37 +37,57 @@ add_action( 'wp_enqueue_scripts', array( $ngTheme, 'enqueue_scripts' ) );
 
 // NAVIGATION
 
-
-function kz_nav()
-{
+function kz_nav() {
     wp_nav_menu(
-    array(
-        'theme_location'  => 'main-menu',
-        'menu'            => '',
-        'container'       => false,
-        'container_class' => '',
-        'container_id'    => '',
-        'menu_class'      => 'menu',
-        'menu_id'         => '',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'before'          => '',
-        'after'           => '',
-        'link_before'     => '',
-        'link_after'      => '',
-        'items_wrap'      => '%3$s',
-        'depth'           => 0,
-        'walker'          => ''
+	    array(
+	        'theme_location'  => 'main-menu',
+	        'menu'            => '',
+	        'container'       => false,
+	        'container_class' => '',
+	        'container_id'    => '',
+	        'menu_class'      => 'menu',
+	        'menu_id'         => '',
+	        'echo'            => true,
+	        'fallback_cb'     => 'wp_page_menu',
+	        'before'          => '',
+	        'after'           => '',
+	        'link_before'     => '',
+	        'link_after'      => '',
+	        'items_wrap'      => '%3$s',
+	        'depth'           => 0,
+	        'walker'          => ''
         )
     );
 }
 
+function social_kz_menu() {
+	wp_nav_menu(
+	    array(
+	        'theme_location'  => 'social-footer-menu',
+	        'menu'            => '',
+	        'container'       => false,
+	        'container_class' => '',
+	        'container_id'    => '',
+	        'menu_class'      => 'menu',
+	        'menu_id'         => '',
+	        'echo'            => true,
+	        'fallback_cb'     => 'wp_page_menu',
+	        'before'          => '',
+	        'after'           => '',
+	        'link_before'     => '',
+	        'link_after'      => '',
+	        'items_wrap'      => '%3$s',
+	        'depth'           => 0,
+	        'walker'          => ''
+        )
+    );
+}
 
-function register_kz_menu()
-{
+function register_kz_menu() {
     register_nav_menus(
         array(
             'main-menu' => __( 'Main Menu' ), // Main Navigation
+            'social-footer-menu' => __( 'Social Footer Menu' ), // Main Navigation
         )
     );
 }
@@ -90,6 +110,5 @@ register_post_type( 'classrooms', array(
     'show_in_rest'	=> true,
     'publicly_queryable' => true,
 ));
-
 
 ?>
